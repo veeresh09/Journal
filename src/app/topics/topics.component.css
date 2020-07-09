@@ -1,0 +1,17 @@
+.mat-card {
+  width: 150px;
+  height: 150px;
+}
+.mat-card-content {
+  text-size-adjust: auto;
+  text-align: center;
+  font-size: 15px;
+  line-height: 150px;
+}
+.mat-expansion-panel {
+  width: 800px;
+  align-items: center;
+  left: 400px;
+  padding: 8px;
+  color: cornflowerblue;
+}

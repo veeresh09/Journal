@@ -1,0 +1,33 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+    <form (submit)="onSubmit(newTopic)" #newTopic="ngForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Topic Name</mat-label>
+        <input matInput name="topicName" ngModel type="text" topicName />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-grid-list cols="3" rowHeight="300px">
+  <mat-grid-tile>
+    <mat-card [class.mat-elevation-z3]="true">
+      <mat-card-content>NLP</mat-card-content>
+    </mat-card></mat-grid-tile
+  >
+  <mat-grid-tile *ngFor="let topic of topics">
+    <mat-card [class.mat-elevation-z3]="true">
+      <mat-card-content>{{ topic.name }}</mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
