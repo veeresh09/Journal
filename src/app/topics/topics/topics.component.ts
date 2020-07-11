@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Topic } from './topic.model';
-import { topicService } from './topic.service';
+import { Topic } from '../topic.model';
+import { topicService } from '../topic.service';
 @Component({
   selector: 'app-topics',
   templateUrl: './topics.component.html',

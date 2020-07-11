@@ -22,12 +22,18 @@
 <mat-grid-list cols="3" rowHeight="300px">
   <mat-grid-tile>
     <mat-card [class.mat-elevation-z3]="true">
-      <mat-card-content>NLP</mat-card-content>
+      <mat-card-content
+        ><button mat-flat-button>Basic</button></mat-card-content
+      >
     </mat-card></mat-grid-tile
   >
   <mat-grid-tile *ngFor="let topic of topics">
     <mat-card [class.mat-elevation-z3]="true">
-      <mat-card-content>{{ topic.name }}</mat-card-content>
+      <mat-card-content
+        ><button mat-flat-button class="topicbtn">
+          {{ topic.name }}
+        </button></mat-card-content
+      >
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
